@@ -1,0 +1,22 @@
+.containinho{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.direitinha{
+    width: 20%;
+}
+.esquerdinha{
+    width: 20%;
+}
+.conteudinho{
+    width: 60%;
+    padding: 40px;
+    padding-top: 60px;
+}
+.caixinha{
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 30px;
+    border: 2px solid #000 ;
+}

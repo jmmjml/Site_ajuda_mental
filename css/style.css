@@ -13,15 +13,21 @@ body {
 /* HEADER */
 .cabecalho {
   background-color: #2e004f; 
-  padding: 10px 8%;
+  padding: 20px;
   display: block;
   position: fixed;
+  width: 100%;
 }
 
 .menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width:100%;
+}
+
+.logo{
+  width: 20%;
 }
 
 .logo img{
@@ -29,6 +35,14 @@ body {
 }
 
 /*MENU*/
+
+.paginas{
+  width: 60%;
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
 .nav-list {
   list-style: none;
   display: flex;
@@ -48,6 +62,9 @@ body {
 }
 
 /* BOTÃO */
+.divBtn{
+  width: 20%;
+}
 .btn-voluntario {
   background-color: transparent;
   border: 2px solid #fce859;
