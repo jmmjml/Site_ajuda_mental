@@ -1,22 +1,334 @@
-.containinho{
+@font-face {
+    font-family: 'Comic';
+    src: url('../fonts/ComicSansMS3.ttf') format('truetype');
+    /* url('../font/Goudy\ Medieval\ Alternate.ttf') format('truetype'); */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.containinho {
     display: flex;
     flex-direction: row;
     width: 100%;
 }
-.direitinha{
+
+.direitinha {
     width: 20%;
 }
-.esquerdinha{
+
+.esquerdinha {
     width: 20%;
 }
-.conteudinho{
+
+.conteudinho {
     width: 60%;
     padding: 40px;
     padding-top: 60px;
+
 }
-.caixinha{
+
+.caixinha {
     margin: 0 auto;
-    width: 80%;
-    border-radius: 30px;
-    border: 2px solid #000 ;
+    width: 85%;
+    border-radius: 20px;
+    border: 2px solid #2e004f;
+    background-color: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px 40px;
+}
+
+.separadinho {
+    padding-top: 30px;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    margin-bottom: 25px;
+
+}
+
+
+.separadinho2 {
+    padding-top: 30px;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.textinhocentrinho {
+    text-align: center;
+}
+
+.titulozinho {
+    padding-top: 20px;
+    font-family: 'Comic';
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+
+.nomezinho {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2e004f;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inputinho,
+.ocupinha,
+.textarinha {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.enviadinho {
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #2e004f;
+    color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.enviadinho:hover {
+    background-color: #fce859;
+    color: #2e004f;
+    transform: scale(1.05);
+}
+
+.limpinho {
+    width: 40%;
+    height: 40px;
+    border-radius: 10px;
+    border: #000 solid 2px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #F8505E;
+    color: white;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.651);
+}
+
+.tabelinha {
+    border: 2px solid #000;
+    width: 90%;
+    background-color: #000;
+    border-spacing: 1.5px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.tabelinha th {
+    background-color: #e7e7e7;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    background-color: #2e004f;
+    color: #fce859;
+
+    font-family: 'Comic';
+
+}
+
+.tabelinha tr {
+    background-color: #fff;
+    table-layout: auto;
+}
+
+.tabelinha td {
+    text-align: center;
+    height: 80px;
+    min-width: 120px;
+}
+
+.botoezinhos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.editinho {
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+    border: #290444 solid 3px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #4a0d75;
+    color: #ffff;
+    font-family: 'Comic';
+}
+
+.excluidinho {
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+    border: #a31420 solid 3px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #d42e3c;
+    color: #ffff;
+    font-family: 'Comic';
+
+}
+
+/* Barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px;
+    background: #2D0A43;
+}
+
+/* Parte móvel da barra */
+::-webkit-scrollbar-thumb {
+    background: #6D3A8E;
+    border-radius: 6px;
+}
+
+/* Fundo da barra */
+::-webkit-scrollbar-track {
+    background: #2D0A43;
+}
+
+.cardinho {
+    width: 46%;
+    height: 300px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background-color: #ffff;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* font-family: 'Comic'; */
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.cardinho:hover {
+    transform: translateY(-15px);
+}
+
+.ladinho {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.titulinho {
+    font-size: 35px;
+    margin-bottom: 8px;
+    color: #4a0d75;
+}
+
+.imaginhaCardinho {
+    width: 100%;
+    height: 210px;
+    border-radius: 5px;
+    border: 1px solid #4a0d75;
+    object-fit: cover;
+}
+
+.cadastrinho {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 60px;
+    border-radius: 10px;
+    border: #290444 solid 3px;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: #4a0d75;
+    color: #ffff;
+    font-family: 'Comic';
+    text-decoration: none;
+
+}
+
+.contatinho {
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+    border: #084404 solid 3px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #0f750d;
+    color: #ffff;
+    font-family: 'Comic';
+}
+
+.linkinhos {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    display: flex;
+    font-size: 35px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.linkinhos a {
+    text-decoration: none;
+    color: black;
+}
+
+.divinha-pessoinha {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+
+.divinha-pessoinha p {
+    font-family: 'Comic';
+    font-weight: bold;
+}
+
+.pessoinha {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.inputinho:focus,
+.ocupinha:focus,
+.textarinha:focus {
+    border-color: #2e004f;
+    box-shadow: 0 0 5px rgba(46, 0, 79, 0.5);
+    outline: none;
+}
+
+.textarinha {
+    height: 150px;
+    resize: none;
 }

@@ -1,0 +1,281 @@
+@font-face {
+    font-family: 'Goudy Medieval';
+    src: url('../fonts/Goudy\ Mediaeval\ Regular.ttf') format('truetype'),
+         url('../fonts/Goudy\ Medieval\ Alternate.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rajdhani';
+    src: url('../fonts/Rajdhani-Regular.ttf') format('truetype'),
+         url('../fonts/Rajdhani-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: Arial;
+    font-size: 18px;
+    color: #fff;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: url('../img/fundojose.jpg');
+    background-size: 25rem;
+}
+.container {
+    width: 80%;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 16px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 3rem;
+    background: rgba(0,0,0,0.9); /*rgba(255,255,255,0.8)*/
+    box-shadow: 0 0 64px 0 rgba(3, 19, 241, 0.37); /* */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Conteúdo principal */
+.container-content {
+    opacity: 1;
+}
+.titulo{
+    font-family: 'Goudy Medieval', serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-shadow: 6px 6px 14px rgba(3, 19, 241, 0.50); /**/
+    color: #fff;
+}
+h2.titulo{
+    font-size: 50px;
+}
+h1.titulo{
+    font-size: 45px;
+}
+.sub{
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+}
+.container p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.imagens{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 98%;
+    height: 20rem;
+    margin: 0 auto;
+}
+.imagens .fotofundo{
+    width: 98%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+}
+.imagens>div{
+    position: relative;
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.fotofundo{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+}
+.fotomeio{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 16px rgba(0,0,0,0.2);
+}
+.meiofoto{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    width: 80%;
+    height: 300px;
+}
+.linkspartes{
+    background: rgba(0,0,0,0.7); 
+    color: #fff; 
+    padding: 12px 24px; 
+    border-radius: 12px; 
+    font-weight: bold; 
+    font-size: 1.1rem; 
+    text-decoration: none; 
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    height: 250px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.linkparte{
+    text-decoration: none;
+    font-family: 'Goudy Medieval', serif;
+    font-size: 25px;
+}
+.ladoalado{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: ; */
+    margin: 0 auto;
+    width: 78%;
+    justify-content: space-between;
+    align-items: center;
+}
+.ladoalado2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.imglogo{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin-right: 8px;
+    background-color: transparent;
+    margin: 0 auto;
+}
+.imglogo2{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin-right: 8px;
+    background-color: transparent;
+}
+.lista{
+    width: 78%;
+    margin: 0 auto;
+}
+#informacoes{
+    width: 77%;
+    margin: 0 auto;
+}
+.listas2{
+    line-height: 24.4px;
+}
+.textocentro{
+    text-align: center;
+}
+.nomespart{
+    font-size: 20px;
+    font-weight: bold;
+}
+.quatroimg{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    gap: 0.3rem;
+    justify-content: center;
+    align-items: center;
+}
+.quatroimg > div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.quatroimg > * {
+    flex: 1 1 calc(25% - 1rem);
+    max-width: calc(25% - 1rem);
+    min-width: 120px;
+    min-height: 120px;
+    box-sizing: border-box;
+    margin-bottom: 0.3rem;
+}
+.logo{
+    width: 200px;
+    height: 200px;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border-radius: 9px;
+}
+.quatroimg .nomelogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    min-width: 60px;
+    max-width: 100%;
+    background: rgba(0,0,0,0.65);
+    padding: 16px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    z-index: 2;
+    width: 157px;
+    text-align: center;
+    font-size:15px;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.quatroimg .atendimentologo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 40%);
+    min-width: 60px;
+    max-width: 100%;
+    background: rgba(0,0,0,0.65);
+    padding: 18px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    z-index: 2;
+    width: 157px;
+    text-align: center;
+    font-size:15px;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* Para telas médias: 2 colunas */
+@media (max-width: 980px) {
+    .quatroimg > div {
+        flex: 1 1 calc(50% - 1rem);
+        max-width: calc(50% - 1rem);
+    }
+}
+
+/* Para telas pequenas: 1 coluna */
+@media (max-width: 600px) {
+    .quatroimg > div {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+#trabalhos-sociais{
+    width: 90%;
+    margin: 0 auto;
+}

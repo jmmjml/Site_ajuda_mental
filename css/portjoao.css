@@ -1,0 +1,152 @@
+* {
+    font-family: Verdana;
+    font-size: 18px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: url('../img/fundogeral.jpg');
+    background-size: cover;
+    backdrop-filter: blur(2px);
+}
+
+.container {
+    width: 80%;
+    border: 1px solid rgba(60, 19, 60, 0.4);
+    border-radius: 20px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 3rem;
+    background: #A36CE0;
+    box-shadow: 0 0 64px 0 lab(24.02% 52.12 -40.34 / 0.767);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.fotomeio {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 64px 0 rgba(3, 19, 241, 0.37);
+}
+
+.container-content {
+    opacity: 1;
+}
+
+.titulos {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+h2.titulo {
+    font-size: 40px;
+}
+
+h1.titulo {
+    font-size: 35px;
+}
+
+.subs {
+    font-size: 20px;
+    text-align: center;
+ color: white;
+}
+
+.container p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.imagens {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 98%;
+    height: 20rem;
+    margin: 0 auto;
+}
+
+.imagens .fotofundo {
+    width: 98%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+.imagens>div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotodefundo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 64px 0 rgba(3, 19, 241, 0.37);
+}
+
+.ladoalado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    margin-right: 8px;
+    background-color: #000;
+    border-radius: 36px;
+}
+
+.container2 {
+    width: 50%;
+    border: 1px solid rgba(60, 19, 60, 0.3);
+    border-radius: 16px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background: rgba(60, 19, 60, 0.8);
+    box-shadow: 0 0 64px 0 rgba(3, 19, 241, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    position: relative;
+    overflow: hidden;
+    padding-top: -200px;
+    padding-bottom: -200px;
+}
+.meiofoto {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+.social{display: flex;
+    justify-content: center;
+     margin-top: 20px;
+     margin-bottom: 20px;
+}
+.extracolor{color: yellow;}
+.concl{color: lime;}

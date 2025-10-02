@@ -1,0 +1,210 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #fffada;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* HEADER */
+.cabecalho {
+    background-color: #2e004f;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+/* LOGO */
+.logo img {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+/* MENU */
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #fce859;
+    font-weight: bold;
+    font-size: 17px;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.nav-list li a:hover {
+    transform: scale(1.05);
+    color: white;
+}
+
+/* BOTÃO */
+.divBtn {
+  width: 20%;
+}
+
+.bord-btn {
+  width: 90%;
+  height: 50px;
+  border: 2px solid #fce859;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-voluntario {
+  background-color: transparent;
+  color: #fce859;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 15px 70px; */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.bord-btn:hover {
+  background-color: #fce859;
+  transform: scale(1.05);
+}
+
+.btn-voluntario:hover {
+
+  color: #2e004f;
+}
+
+/* MAIN CARD */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+/* IMAGEM */
+.perfil-img {
+    flex: 1;
+}
+
+.perfil-img img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* DETALHES */
+.perfil-detalhes {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.perfil-detalhes h2 {
+    color: #2e004f;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.perfil-detalhes h3 {
+    color: #6a2fbf;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+
+}
+
+.perfil-detalhes p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+/* CONTATO */
+.contatoprof {
+    display: flex;
+    gap: 20px;
+    margin-top: auto;
+}
+
+.contatoprof a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+    box-shadow: 2px 1px 4px 1px black;
+    border-radius: 11px;
+}
+
+.contatoprof a:hover {
+    transform: scale(1.2);
+}
+
+.contatoprof img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+
+/* BOTÃO VOLTAR */
+.btn-voltar {
+    margin-top: 25px;
+    padding: 12px 10px;
+    background: #2e004f;
+    color: #fce859;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-size: 20px;
+    box-shadow: 2px 1px 4px 1px black;
+}
+
+.btn-voltar:hover {
+    background: #fce859;
+    color: #2e004f;
+}
