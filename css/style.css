@@ -159,6 +159,13 @@ body {
   background-repeat: no-repeat;
 }
 
+#separador {
+  width: 100%; 
+  height: 10rem; 
+  background-image: url('/img/fundo2.png'); 
+  background-repeat: no-repeat;
+}
+
 /* SEÇÃO QUEM SOMOS */
 .quem-somos {
   display: flex;
